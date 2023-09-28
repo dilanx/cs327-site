@@ -22,7 +22,7 @@ Modern, clean, and simple
 
 ## What is one new skill that you gained during this project?
 
-Nothing new for this project
+Using the fireworks-js library
 
 ## Glitch handles of people in class you got help from, and their help
 
