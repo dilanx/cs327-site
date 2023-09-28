@@ -1,0 +1,176 @@
+html {
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+  background-color: #000000;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+}
+
+p {
+  margin: 16px 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+  margin: 0;
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #808080;
+  text-align: center;
+}
+
+.my-image {
+  width: 128px;
+  height: 128px;
+  padding: 0 32px;
+  border-bottom: 2px solid #232323;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social,
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #d8b4fe;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.social::after,
+.project::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scale: 90%;
+  opacity: 0;
+  z-index: -1;
+  background-color: #242424;
+  border-radius: 8px;
+  transition:
+    scale 150ms ease-in-out,
+    opacity 150ms ease-in-out;
+}
+
+.social:hover::after,
+.project:hover::after {
+  opacity: 1;
+  scale: 100%;
+}
+
+.social:active::after {
+  scale: 95%;
+}
+
+.project:active::after {
+  scale: 98%;
+}
+
+.projects {
+  margin: 32px auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+.project {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 16px 32px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.project .content {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project .content p {
+  margin: 0;
+  text-align: left;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.project .content h2 {
+  font-size: 24px;
+}
+
+.red {
+  color: #fecaca;
+}
+
+.project i {
+  font-size: 24px;
+  color: #9a9a9a;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}

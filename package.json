@@ -1,0 +1,12 @@
+{
+  "name": "cs327-site",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Dilan Nair",
+  "license": "ISC",
+  "prettier": "@dilanx/config/prettier",
+  "devDependencies": {
+    "@dilanx/config": "^1.1.2",
+    "prettier": "^3.0.3"
+  }
+}
