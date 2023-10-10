@@ -12,8 +12,6 @@ https://genmeth.dilanxd.com
 
 Hosted on GitHub, not Glitch.
 
-https://github.com/dilanx/cs327-site
-
 ## Squad glitch page url
 
 https://wavefunctions.glitch.me

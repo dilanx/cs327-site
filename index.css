@@ -28,11 +28,10 @@ p {
 
 main {
   display: flex;
-  height: 100vh;
-  justify-content: center;
+  min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  padding: 16px;
+  padding: 64px 16px;
   box-sizing: border-box;
 }
 
@@ -40,6 +39,9 @@ h1 {
   font-size: 72px;
   text-align: center;
   margin: 0;
+}
+
+h1:not(.a) {
   background: #a8ff78;
   background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
   background: linear-gradient(to right, #78ffd6, #a8ff78);
@@ -137,6 +139,7 @@ p {
   padding: 16px 32px;
   color: #ffffff;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .project .content {
@@ -161,6 +164,10 @@ p {
 
 .red {
   color: #fecaca;
+}
+
+.orange {
+  color: #fed7aa;
 }
 
 .project i {

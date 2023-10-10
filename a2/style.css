@@ -1,0 +1,49 @@
+#sketches {
+  margin: 64px 0;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sketch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.canvas {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.sketch button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: #242424;
+  color: #ffffff;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  opacity: 0.75;
+  cursor: pointer;
+  transition:
+    opacity 150ms ease-in-out,
+    scale 150ms ease-in-out;
+}
+
+.sketch button:hover {
+  opacity: 1;
+}
+
+.sketch button:active {
+  scale: 0.95;
+}
