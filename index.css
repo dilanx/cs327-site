@@ -68,8 +68,11 @@ p {
   align-items: center;
 }
 
+.button,
 .social,
 .project {
+  background: none;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +86,7 @@ p {
   position: relative;
 }
 
+.button::after,
 .social::after,
 .project::after {
   content: '';
@@ -101,6 +105,7 @@ p {
     opacity 150ms ease-in-out;
 }
 
+.button::after,
 .social::after {
   scale: 90%;
 }
@@ -109,12 +114,14 @@ p {
   scale: 95%;
 }
 
+.button:hover::after,
 .social:hover::after,
 .project:hover::after {
   opacity: 1;
   scale: 100%;
 }
 
+.button:active::after,
 .social:active::after {
   scale: 95%;
 }
@@ -168,6 +175,10 @@ p {
 
 .orange {
   color: #fed7aa;
+}
+
+.yellow {
+  color: #fef08a;
 }
 
 .project i {

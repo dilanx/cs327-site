@@ -51,7 +51,7 @@ Not applicable for this project
 
 ## Assets you got from online and why you have permission to include them
 
-Not applicable for this project
+- [Font Awesome Free](https://fontawesome.com) ([LICENSE](https://fontawesome.com/license/free))
 
 ## Online help, including ChatGPT
 
