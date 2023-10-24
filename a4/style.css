@@ -1,0 +1,96 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0;
+}
+
+canvas {
+  margin: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tools label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.systems {
+  display: flex;
+  gap: 8px;
+}
+
+.systems button {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.system-controls-container {
+  display: flex;
+  max-width: 640px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.system-controls {
+  background: #323232;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.system-controls p {
+  margin: 0;
+}
+
+.system-controls-title p {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.system-controls-title p.label,
+.system-controls-tips p.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a0a0a0;
+}
+
+.system-controls-title p.name {
+  font-size: 18px;
+}
+
+.system-controls-tips p.tip {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.system-controls td {
+  padding: 4px 8px;
+  text-align: right;
+}
+
+input {
+  accent-color: #ffffff;
+}
+
+.system-controls input {
+  display: block;
+  margin: auto;
+}

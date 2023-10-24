@@ -31,11 +31,6 @@ canvas {
   font-size: 14px;
 }
 
-.brushes button.active {
-  border-color: #646464;
-  background-color: #646464;
-}
-
 .brushes button img {
   width: 14px;
   height: 14px;

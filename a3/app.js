@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
   new Vue({
     template: `
       <div id="app">
-      <!-- change cursor -->
         <div
           ref="canvas"
           :style="'cursor: url(./icons/' + activeBrush.icon + '), default;'"
         />
-        <!-- a place to put tools -->
+        
         <div class="tools">
           <div class="brushes">
             <button
