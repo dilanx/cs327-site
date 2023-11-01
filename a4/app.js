@@ -11,7 +11,6 @@ const DEFAULT_LOOP_LENGTH_IN_FRAMES = 100;
 let systems = [];
 
 function drawBackground(p, {}) {
-  // TODO, draw any background you want here each frame
   p.background('#7c3aed');
 }
 
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   new Vue({
     template: `
-      <div id="app" >
+      <div id="app">
 			  <div ref="canvas" />
 
         <div class="tools">
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
               {{system.displayName}}
             </button>
           </div>
-
 
           <div class="system-controls-container">
             <div v-for="system in activeSystems" class="system-controls">

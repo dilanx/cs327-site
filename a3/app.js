@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
               <span>{{brush.label}}</span>
             </button>
           </div>
-          <div class="divider" />
+          <div class="divider"></div>
           <div class="brushes">
             <button
               v-for="brush in displayErasers"
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
               <span>{{brush.label}}</span>
             </button>
           </div>
-          <div class="divider" />
+          <div class="divider"></div>
           <div class="settings">
             <color-picker v-model="settings.color0" />
             <color-picker v-model="settings.color1" />
