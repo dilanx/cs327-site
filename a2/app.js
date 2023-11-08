@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     template: `
       <div id="sketches">
         <div v-for="(sketch, index) in activeSketches" class="sketch">
-          <div :ref="'canvas' + index" class="canvas" />
+          <div :ref="'canvas' + index" class="canvas"></div>
           <h2>{{sketch.name}}</h2>
 			    <button @click="saveSketch(sketch)">
             <i class="fas fa-download"></i>

@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   new Vue({
     template: `
       <div id="app">
-			  <div ref="canvas" />
+			  <div ref="canvas"></div>
 
         <div class="tools">
           <label>

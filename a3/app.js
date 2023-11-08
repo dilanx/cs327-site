@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         <div
           ref="canvas"
           :style="'cursor: url(./icons/' + activeBrush.icon + '), default;'"
-        />
+        ></div>
         
         <div class="tools">
           <div class="brushes">

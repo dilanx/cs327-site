@@ -23,21 +23,6 @@ canvas {
   gap: 4px;
 }
 
-.system-tools-item select {
-  color: #ffffff;
-  background-color: #323232;
-  border-radius: 8px;
-  padding: 4px 8px;
-}
-
-.system-tools-item select:hover {
-  background-color: #3a3a3a;
-}
-
-.system-tools-item select:focus {
-  outline: 1px solid #ffffff;
-}
-
 .labeled-slider {
   display: flex;
   flex-direction: column;

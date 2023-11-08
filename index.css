@@ -210,6 +210,21 @@ span.bold {
   font-weight: bold;
 }
 
+select {
+  color: #ffffff;
+  background-color: #323232;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+select:hover {
+  background-color: #3a3a3a;
+}
+
+select:focus {
+  outline: 1px solid #ffffff;
+}
+
 #fireworks {
   position: fixed;
   top: 0;

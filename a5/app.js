@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   new Vue({
     template: `
       <div id="app">
-        <div ref="canvas" />
+        <div ref="canvas"></div>
 
         <div class="system-tools">
           <div class="system-tools-item">
@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
               />
             </div>
           </div>
-
         </div>
         
         <div class="individual-tools">
@@ -120,21 +119,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             </table>
           </div>
         </div>
-			<div class="columns"> 
-			<div class="tools column">
-				<!-- ----------------------------------- -->
-				<!-- sliders for the current INDIVIDUAL -->
-				<div class="panel">
-					
-
-					<!-- LANDMARKS -->
-					
-
-					<!-- show all the sliders for this DNA -->
-					
-				</div>
-			</div>
-			</div>
 		  </div>
     `,
     mounted() {
