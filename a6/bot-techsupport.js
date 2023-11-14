@@ -264,6 +264,7 @@
     template: `
 			<div class="chat-controls">
 				<input
+          class="text-input"
           @keyup.enter="sendText"
           v-model="inputText"
           placeholder="Message..."

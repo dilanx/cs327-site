@@ -56,20 +56,6 @@ canvas {
 
 .chat-controls input {
   flex: 1;
-  border-radius: 8px;
-  background-color: #242424;
-  border: 1px solid #808080;
-  color: #ffffff;
-  padding: 8px;
-}
-
-.chat-controls input:hover {
-  border-color: #a0a0a0;
-}
-
-.chat-controls input:focus {
-  border-color: #ffffff;
-  outline: none;
 }
 
 .chat-controls button {

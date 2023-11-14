@@ -197,6 +197,10 @@ p {
   color: #bbf7d0;
 }
 
+.teal {
+  color: #99f6e4;
+}
+
 .blue {
   color: #bfdbfe;
 }
@@ -227,6 +231,23 @@ select:hover {
 
 select:focus {
   outline: 1px solid #ffffff;
+}
+
+.text-input {
+  border-radius: 8px;
+  background-color: #242424;
+  border: 1px solid #808080;
+  color: #ffffff;
+  padding: 8px;
+}
+
+.text-input:hover {
+  border-color: #a0a0a0;
+}
+
+.text-input:focus {
+  border-color: #ffffff;
+  outline: none;
 }
 
 #fireworks {
