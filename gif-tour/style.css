@@ -1,0 +1,72 @@
+.about {
+  max-width: 640px;
+  line-height: 1.5;
+}
+
+.tour {
+  margin: 64px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.tour-item {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.tour-item img {
+  border-radius: 16px;
+  width: 256px;
+  height: 256px;
+}
+
+.tour-item .text {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tour-item .text h2 {
+  font-size: 32px;
+  color: #d8b4fe;
+}
+
+.tour-item .text p {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.tour-item .text .author {
+  font-size: 24px;
+  margin: 4px 0;
+}
+
+.tour-item .text .author span {
+  color: #ffffff;
+}
+
+.tour-item .text .desc {
+  margin: 8px 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .tour-item {
+    flex-direction: column;
+  }
+
+  .tour-item .text {
+    align-items: center;
+  }
+
+  .tour-item .text h2 {
+    text-align: center;
+  }
+
+  .tour-item .text p {
+    text-align: center;
+  }
+}
