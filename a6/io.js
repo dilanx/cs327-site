@@ -1,14 +1,12 @@
-
 // Get your own API key https://huggingface.co/docs/api-inference/quicktour
-const API_TOKEN = "XXXXXTOKENXXXXX"
+const API_TOKEN = 'XXXXXTOKENXXXXX';
 
 // The API key would be public here
 // If someone else used it, you could run out of access for a bit
 // If you want to use it, you can take that risk, which is a mild risk
 // If your key is used too much, HuggingFace wont respond to your requests for a while
 
-
-// You'll meed a modelURL, and a payload, which will be different 
+// You'll meed a modelURL, and a payload, which will be different
 // depending on what task you want to do:
 // 		e.g. zero-shot (classify text into one of several category)
 // 		or autocompletion
@@ -19,17 +17,17 @@ const API_TOKEN = "XXXXXTOKENXXXXX"
 
 function makeRequestFromHuggingFace({ modelURL, payload }) {
   return new Promise((resolve, reject) => {
-    const baseURL = "https://api-inference.huggingface.co/models/";
+    const baseURL = 'https://api-inference.huggingface.co/models/';
     const API_URL = baseURL + modelURL;
 
     const headers = {
-      'Authorization': `Bearer ${API_TOKEN}`,
+      Authorization: `Bearer ${API_TOKEN}`,
       'Content-Type': 'application/json',
     };
 
-    console.log("==========\nHUGGING FACE REQUEST!");
-    console.log("Payload:\n", JSON.stringify(payload, null, 2));
-    console.log("Headers:\n", JSON.stringify(headers, null, 2));
+    console.log('==========\nHUGGING FACE REQUEST!');
+    console.log('Payload:\n', JSON.stringify(payload, null, 2));
+    console.log('Headers:\n', JSON.stringify(headers, null, 2));
 
     // Make the fetch request
     fetch(API_URL, {
@@ -74,4 +72,3 @@ function makeRequestFromHuggingFace({ modelURL, payload }) {
 // 		parameters: {max_new_tokens: 100}
 // 	}
 // })
-		

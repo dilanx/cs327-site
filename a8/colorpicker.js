@@ -1,9 +1,9 @@
-Vue.component('color-picker', {
+Vue.component("color-picker", {
   template: `<input type="color" v-model="hexColor" @input="change" />`,
   methods: {
     change() {
       let hsl = hexToHSL(this.hexColor);
-      this.$emit('input', hsl);
+      this.$emit("input", hsl);
     },
   },
   data() {
@@ -13,7 +13,7 @@ Vue.component('color-picker', {
       hexColor,
     };
   },
-  props: ['value'],
+  props: ["value"],
 });
 
 // Hex to HSLA conversion adapted from
@@ -25,13 +25,13 @@ function hexToHSL(H) {
     g = 0,
     b = 0;
   if (H.length == 4) {
-    r = '0x' + H[1] + H[1];
-    g = '0x' + H[2] + H[2];
-    b = '0x' + H[3] + H[3];
+    r = "0x" + H[1] + H[1];
+    g = "0x" + H[2] + H[2];
+    b = "0x" + H[3] + H[3];
   } else if (H.length == 7) {
-    r = '0x' + H[1] + H[2];
-    g = '0x' + H[3] + H[4];
-    b = '0x' + H[5] + H[6];
+    r = "0x" + H[1] + H[2];
+    g = "0x" + H[3] + H[4];
+    b = "0x" + H[5] + H[6];
   }
   // Then to HSL
   r /= 255;
@@ -102,9 +102,9 @@ function HSLToHex(h, s, l) {
   b = Math.round((b + m) * 255).toString(16);
 
   // Prepend 0s, if necessary
-  if (r.length == 1) r = '0' + r;
-  if (g.length == 1) g = '0' + g;
-  if (b.length == 1) b = '0' + b;
+  if (r.length == 1) r = "0" + r;
+  if (g.length == 1) g = "0" + g;
+  if (b.length == 1) b = "0" + b;
 
-  return '#' + r + g + b;
+  return "#" + r + g + b;
 }
