@@ -2,4 +2,4 @@
 
 https://genmeth.dilanxd.com
 
-School work for COMP_SCI 327: Generative Methods
+COMP_SCI 327: Generative Methods (Fall 2023)
